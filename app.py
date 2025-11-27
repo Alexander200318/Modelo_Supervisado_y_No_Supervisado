@@ -164,13 +164,13 @@ elif mode == "📊 Modo Supervisado (AdaBoost)":
         
         with col1:
             sepal_length = st.slider(
-                "Sepal Length (cm)",
+                "Largo del sépalo (cm)",
                 float(X[:, 0].min()),
                 float(X[:, 0].max()),
                 float(X[:, 0].mean())
             )
             sepal_width = st.slider(
-                "Sepal Width (cm)",
+                "Ancho del sépalo (cm)",
                 float(X[:, 1].min()),
                 float(X[:, 1].max()),
                 float(X[:, 1].mean())
@@ -178,13 +178,13 @@ elif mode == "📊 Modo Supervisado (AdaBoost)":
         
         with col2:
             petal_length = st.slider(
-                "Petal Length (cm)",
+                "Largo del pétalo (cm)",
                 float(X[:, 2].min()),
                 float(X[:, 2].max()),
                 float(X[:, 2].mean())
             )
             petal_width = st.slider(
-                "Petal Width (cm)",
+                "Ancho del pétalo (cm)",
                 float(X[:, 3].min()),
                 float(X[:, 3].max()),
                 float(X[:, 3].mean())
@@ -295,8 +295,8 @@ elif mode == "🔍 Modo No Supervisado (Clustering)":
             alpha=0.6,
             edgecolors='black'
         )
-        axes[0].set_xlabel('Sepal Length (cm)')
-        axes[0].set_ylabel('Sepal Width (cm)')
+        axes[0].set_xlabel('Largo del sépalo (cm)')
+        axes[0].set_ylabel('Ancho del sépalo (cm)')
         axes[0].set_title('Clusters - Características Sepal')
         plt.colorbar(scatter1, ax=axes[0])
         
@@ -309,8 +309,8 @@ elif mode == "🔍 Modo No Supervisado (Clustering)":
             alpha=0.6,
             edgecolors='black'
         )
-        axes[1].set_xlabel('Petal Length (cm)')
-        axes[1].set_ylabel('Petal Width (cm)')
+        axes[1].set_xlabel('Largo del pétalo (cm)')
+        axes[1].set_ylabel('Ancho del pétalo (cm)')
         axes[1].set_title('Clusters - Características Petal')
         plt.colorbar(scatter2, ax=axes[1])
         
