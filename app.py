@@ -146,11 +146,11 @@ elif mode == "📊 Modo Supervisado (AdaBoost)":
         metrics = st.session_state['supervised_metrics']
         
         with col1:
-            st.metric("Accuracy", f"{metrics['accuracy']:.4f}")
+            st.metric("Exactitud", f"{metrics['accuracy']:.4f}")
         with col2:
-            st.metric("Precision", f"{metrics['precision']:.4f}")
+            st.metric("Precisión", f"{metrics['precision']:.4f}")
         with col3:
-            st.metric("Recall", f"{metrics['recall']:.4f}")
+            st.metric("Recordar", f"{metrics['recall']:.4f}")
         with col4:
             st.metric("F1-Score", f"{metrics['f1_score']:.4f}")
         
